@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background-color: hsl(0, 100%, 74%);
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+main{
+    width: 100%;
+    min-height: 100vh; 
+    background: url('./images/bg-intro-mobile.png');
+    padding: 5rem 0;
+}
+.registration-container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+.registration-text{
+    text-align: center;
+    color: #fff;
+}
+.registration-text h1{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+.registration-text p{
+    width: 80%;
+    margin: 0 auto;
+}
+input[type='text'], input[type='email'], input[type='password']{
+    width: 90%;
+    padding: 1rem;
+    border: 1px solid hsl(246, 25%, 77%);
+    border-radius: 5px;
+    background-color: #fff;
+    font-weight: 600;
+    margin-bottom: 0.7rem;
+    margin-left: 5%;
+}
+
+.registration-form{
+    background-color: #fff;
+    width: 70%;
+    margin: 0 auto;
+    padding: 5% 0;
+    border-radius: 5px;
+    box-shadow: 0px 5px 5px rgba(89, 87, 87, 0.632);
+}
+
+.free-btn{
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 1rem;
+    padding: 1rem 0;
+    background-color: hsl(248, 32%, 49%);
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 5px 5px rgba(89, 87, 87, 0.632);
+}
+
+.claim-btn{
+    width: 90%;
+    margin-left: 5%;
+    padding: 1rem 0;
+    background-color: hsl(154, 59%, 51%);
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+}
+
+@media (min-width: 768px){
+    main{
+        background: url('./images/bg-intro-desktop.png');
+        padding: 5rem 0;
+    }
+    .registration-container{
+        flex-direction: row;
+        width: 100%;
+        gap: 0;
+        padding: 2rem;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .registration-card{
+        width: 60%;
+    }
+    .registration-text{
+        flex: 40%;
+        text-align: left;
+        margin-left: 5%;
+    }
+    .registration-texthh1{
+        font-size: 2.5rem;
+    }
+    .registration-text p{
+        margin: 0;
+        width: 100%;
+    }
+    .registration-form, .free-btn{
+        width: 80%;
+    }
+    .free-btn{
+        margin-left: 10%;
+    }
+}
+
+@media (min-width: 1024px){
+    .registration-form, .free-btn{
+        width: 60%;
+    }
+    .free-btn{
+        margin-left: 20%;
+    }
+}
