@@ -148,15 +148,15 @@ input:focus {
   display: none;
 }
 
-/* Display error icon if input is invalid */
+/* Display error icon if input is invalid or empty */
 input:invalid + .error-icon {
   display: block;
   position: absolute;
   top: 25px;
-  right: 60px;
+  right: 45px;
 }
 
-/* Display error text if input is invalid */
+/* Display error text if input is invalid or empty */
 input:invalid + .error-icon + .error-text {
   display: block;
   position: absolute;
