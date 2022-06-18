@@ -1,222 +1,251 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+/* General styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    min-height: 100vh;
-    background-color: hsl(0, 100%, 74%);
-    font-size: 16px;
-    font-family: 'Poppins', sans-serif;
-}
-main{
-    width: 100%;
-    min-height: 100vh; 
-    background: url('./images/bg-intro-mobile.png');
-    padding: 5rem 0;
-    display: grid;
-    place-content: center;
-}
-.registration-container{
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
-}
-.registration-text{
-    text-align: center;
-    color: #fff;
-}
-.registration-text h1{
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 2rem;
-}
-.registration-text p{
-    width: 80%;
-    margin: 0 auto;
-}
-input[type='text'], input[type='email'], input[type='password']{
-    width: 90%;
-    padding: 1rem;
-    border: 1px solid hsl(246, 25%, 77%);
-    border-radius: 5px;
-    background-color: #fff;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    margin-left: 5%;
-}
-input:focus{
-    outline: black solid 1px;
+body {
+  min-height: 100vh;
+  background-color: hsl(0, 100%, 74%);
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
 }
 
-.registration-form{
-    background-color: #fff;
-    width: 90%;
-    margin: 0 auto;
-    padding: 5% 0;
-    border-radius: 5px;
-    box-shadow: 0px 5px 5px rgba(89, 87, 87, 0.632);
+/* Grid to center all content horizontally and vertically */
+main {
+  width: 100%;
+  min-height: 100vh;
+  background: url('./images/bg-intro-mobile.png');
+  padding: 5rem 0;
+  display: grid;
+  place-content: center;
 }
 
-.free-btn{
-    width: 90%;
-    margin-left: 5%;
-    margin-bottom: 1rem;
-    padding: 1rem 0;
-    background-color: hsl(248, 32%, 49%);
-    color: #fff;
-    border-radius: 5px;
-    border: none;
-    box-shadow: 0px 5px 5px rgba(89, 87, 87, 0.632);
+/* Registration form and text container (all contents) */
+.registration-container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.registration-text {
+  text-align: center;
+  color: #fff;
+}
+.registration-text h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.registration-text p {
+  width: 80%;
+  margin: 0 auto;
 }
 
-.free-btn p{
-    width: 40%;
-    margin: 0 auto;
+/* Form inputs */
+input[type='text'],
+input[type='email'],
+input[type='password'] {
+  width: 90%;
+  padding: 1rem;
+  border: 1px solid hsl(246, 25%, 77%);
+  border-radius: 5px;
+  background-color: #fff;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  margin-left: 5%;
 }
-.claim-btn{
-    width: 90%;
-    margin-left: 5%;
-    margin-top: 1rem;
-    padding: 1rem 0;
-    background-color: hsl(154, 59%, 51%);
-    color: #fff;
-    border: none;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    -webkit-box-shadow: 0px 9px 0px hsl(154, 55%, 32%), 0px 9px 25px rgba(0,0,0,.7);
-    -moz-box-shadow: 0px 9px 0px hsl(154, 55%, 32%), 0px 9px 25px rgba(0,0,0,.7);
-    box-shadow: 0px 5px 0px hsl(154, 55%, 32%), 0px 5px 0px rgba(0,0,0,.7);
-    -webkit-transition: all .1s ease;
-    -moz-transition: all .1s ease;
-    -ms-transition: all .1s ease;
-    -o-transition: all .1s ease;
-    transition: all .1s ease;
-    cursor: pointer;
+input:focus {
+  outline: hsl(249, 10%, 26%) solid 1px;
 }
 
-.claim-btn:hover{
-    opacity: 0.5;
+/* Form background */
+.registration-form {
+  background-color: #fff;
+  width: 90%;
+  margin: 0 auto;
+  padding: 5% 0;
+  border-radius: 5px;
+  box-shadow: 0px 5px 5px rgba(89, 87, 87, 0.632);
 }
 
-.terms-text{
-    width: 80%;
-    text-align: center;
-    margin: 1rem auto 0.5rem auto;
-    color: hsl(246, 25%, 77%);
-    font-size: 12px;
+/* Free trial (try it free 7 days button) */
+.free-btn {
+  width: 90%;
+  margin-left: 5%;
+  margin-bottom: 1rem;
+  padding: 1rem 0;
+  background-color: hsl(248, 32%, 49%);
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 5px 5px rgba(89, 87, 87, 0.632);
 }
 
-.terms-text a{
-    color: hsl(0, 100%, 74%);
-    text-decoration: none;
+.free-btn p {
+  width: 40%;
+  margin: 0 auto;
 }
 
-.form-group{
-    position: relative;
+/* Free trial (submit button) */
+.claim-btn {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 1rem;
+  padding: 1rem 0;
+  background-color: hsl(154, 59%, 51%);
+  color: #fff;
+  border: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 9px 0px hsl(154, 55%, 32%),
+    0px 9px 25px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0px 9px 0px hsl(154, 55%, 32%),
+    0px 9px 25px rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 5px 0px hsl(154, 55%, 32%), 0px 5px 0px rgba(0, 0, 0, 0.7);
+  -webkit-transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease;
+  -ms-transition: all 0.1s ease;
+  -o-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+  cursor: pointer;
 }
 
-.error-icon{
-    display: none;
-}
-.form-group{
-    position: relative;
-}
-.error-text{
-    display: none;
+.claim-btn:hover {
+  opacity: 0.5;
 }
 
-input:invalid + .error-icon{
-    display: block;
-    position: absolute;
-    top: 25px;
-    right: 60px;
+.terms-text {
+  width: 80%;
+  text-align: center;
+  margin: 1rem auto 0.5rem auto;
+  color: hsl(246, 25%, 77%);
+  font-size: 12px;
 }
 
-input:invalid + .error-icon + .error-text{
-    display: block;
-    position: absolute;
-    bottom: 0;
-    right: 5%;
-    font-size: 12px;
-    font-style: italic;
-    color: hsl(0, 100%, 74%);
+.terms-text a {
+  color: hsl(0, 100%, 74%);
+  text-decoration: none;
 }
 
-input:invalid  {
-    border: 1px solid hsl(0, 100%, 74%);
-    margin-top: 0.8rem;
-    margin-bottom: 1.2rem;
+.form-group {
+  position: relative;
+}
+
+/* Error section */
+
+.error-icon {
+  display: none;
+}
+.form-group {
+  position: relative;
+}
+.error-text {
+  display: none;
+}
+
+/* Display error icon if input is invalid */
+input:invalid + .error-icon {
+  display: block;
+  position: absolute;
+  top: 25px;
+  right: 60px;
+}
+
+/* Display error text if input is invalid */
+input:invalid + .error-icon + .error-text {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 5%;
+  font-size: 12px;
+  font-style: italic;
+  color: hsl(0, 100%, 74%);
+}
+
+/* input is invalid border and spacing */
+input:invalid {
+  border: 1px solid hsl(0, 100%, 74%);
+  margin-top: 0.8rem;
+  margin-bottom: 1.2rem;
+}
+
+/* if input is invalid and has focus border */
+input:invalid:focus {
+  border: hsl(249, 10%, 26%) solid 1px;
+}
+
+/* Media  query for tablet */
+@media (min-width: 768px) and (max-width: 990.9px) {
+  main {
+    background: url('./images/bg-intro-desktop.png');
   }
-
-
-@media (min-width: 768px) and (max-width: 990.9px){
-    main{
-        background: url('./images/bg-intro-desktop.png');
-    }
-    .free-btn{
-        width: 70%;
-        margin-left: 15%;
-    }
-    .registration-form{
-        width: 70%;
-    }
-    .registration-container{
-        gap: 5rem;
-    }
-    .free-btn p{
-        width: 100%;
-    }
+  .free-btn {
+    width: 70%;
+    margin-left: 15%;
+  }
+  .registration-form {
+    width: 70%;
+  }
+  .registration-container {
+    gap: 5rem;
+  }
+  .free-btn p {
+    width: 100%;
+  }
 }
 
-@media (min-width: 991px){
-    main{
-        background: url('./images/bg-intro-desktop.png');
-        padding: 5rem 0;
-    }
-    .registration-container{
-        flex-direction: row;
-        width: 100%;
-        gap: 0;
-        padding: 2rem;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .registration-card{
-        width: 70%;
-    }
-    .registration-text{
-        flex: 40%;
-        text-align: left;
-        margin-left: 8%;
-    }
-    .registration-text h1{
-        font-size: 2.5rem;
-    }
-    .registration-text p{
-        margin: 0;
-        width: 100%;
-    }
-    .registration-form, .free-btn{
-        width: 80%;
-    }
-    .free-btn{
-        margin-left: 10%;
-    }
-    .free-btn p{
-        width: 100%;
-    }
+/* media query for desktop */
+@media (min-width: 991px) {
+  main {
+    background: url('./images/bg-intro-desktop.png');
+    padding: 5rem 0;
+  }
+  .registration-container {
+    flex-direction: row;
+    width: 100%;
+    gap: 0;
+    padding: 2rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .registration-card {
+    width: 70%;
+  }
+  .registration-text {
+    flex: 40%;
+    text-align: left;
+    margin-left: 8%;
+  }
+  .registration-text h1 {
+    font-size: 2.5rem;
+  }
+  .registration-text p {
+    margin: 0;
+    width: 100%;
+  }
+  .registration-form,
+  .free-btn {
+    width: 80%;
+  }
+  .free-btn {
+    margin-left: 10%;
+  }
+  .free-btn p {
+    width: 100%;
+  }
 }
 
-@media (min-width: 1024px){
-    .registration-form, .free-btn{
-        width: 60%;
-    }
-    .free-btn{
-        margin-left: 20%;
-    }
+@media (min-width: 1024px) {
+  .registration-form,
+  .free-btn {
+    width: 60%;
+  }
+  .free-btn {
+    margin-left: 20%;
+  }
 }
